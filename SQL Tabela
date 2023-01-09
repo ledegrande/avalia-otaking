@@ -1,0 +1,16 @@
+select
+	pessoa_leticia.pessoa_id,
+	pessoa_leticia.nome,
+	pessoa_leticia.cpf,
+	pessoa_leticia.idade,
+	pessoa_leticia.sexo,
+	endereco_leticia.tipo,
+	endereco_leticia.logradouro,
+	endereco_leticia.numero,
+	endereco_leticia.complemento,
+	endereco_leticia.cep,
+	endereco_leticia.cidade,
+	endereco_leticia.estado 
+from
+	pessoa_leticia
+	inner join endereco_leticia on pessoa_leticia.pessoa_id = endereco_leticia.pessoa_id;
